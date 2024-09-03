@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ModelLivro {
-    List<Livro> list = new ArrayList<>();
+    private final List<Livro> list = new ArrayList<>();
 
     public void addLivro(Livro l){
         list.add(l);
@@ -10,6 +10,7 @@ public class ModelLivro {
 
     public void removeLivro(Livro l){
         list.remove(l);
+
     }
 
     public void imprimirLIvros(){
